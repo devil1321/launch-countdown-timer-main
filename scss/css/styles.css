@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.f-c {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.j-c-sa {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.j-c-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.j-c-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.a-i-sa {
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+}
+
+.a-i-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.a-i-sb {
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "Red Hat Text";
+  font-size: 0.875rem;
+}
+
+h1 {
+  letter-spacing: 4px;
+  font-size: 20px;
+  margin: 9rem auto 3.75rem;
+  width: 90%;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  font-size: 0.375rem;
+  color: white;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+i {
+  cursor: pointer;
+  margin-top: 8.25rem;
+  color: #8486a9;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+i:not(:last-child) {
+  margin-right: 2rem;
+}
+
+i:hover {
+  color: #fb6087;
+}
+
+.main-wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../../images/bg-stars.svg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.main-wrapper:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -2;
+  top: 0px;
+  left: 0px;
+  background-color: #191a24;
+}
+
+.main-wrapper:before {
+  content: '';
+  width: 100%;
+  height: 10.625rem;
+  position: absolute;
+  z-index: -1;
+  bottom: 0px;
+  left: 0px;
+  background-image: url("../../images/pattern-hills.svg");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 39.9375em) {
+  .main-wrapper:before {
+    background-size: 280%;
+    background-position: 85% bottom;
+  }
+}
+
+.countdown {
+  width: 100%;
+  height: 100%;
+}
+
+.countdown__wrapper {
+  margin: 0px auto;
+}
+
+@media (min-width: 65em) {
+  .countdown__wrapper {
+    max-width: 43.125rem;
+  }
+}
+
+.countdown__box {
+  position: relative;
+  overflow: hidden;
+  width: 4.375rem;
+  height: 4.375rem;
+  border-radius: 0.3125rem;
+  background-color: #343650;
+  margin-bottom: 1rem;
+  -webkit-filter: drop-shadow(0px 2px 0px #1e1f29);
+          filter: drop-shadow(0px 2px 0px #1e1f29);
+}
+
+.countdown__box:not(:last-child) {
+  margin-right: 0.625rem;
+}
+
+@media (min-width: 65em) {
+  .countdown__box {
+    width: 9rem;
+    height: 9rem;
+  }
+}
+
+.countdown__overlay {
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 51%;
+  background-color: #1e1f29;
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.countdown__overlay p {
+  padding-top: 0.9375rem;
+}
+
+@media (min-width: 65em) {
+  .countdown__overlay p {
+    padding-top: 2.1875rem;
+    font-size: 3.5rem;
+  }
+}
+
+.countdown__ball {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background-color: #191a24;
+  border-radius: 50px;
+}
+
+.countdown__ball.left {
+  left: -5px;
+  top: 42%;
+}
+
+@media (min-width: 65em) {
+  .countdown__ball.left {
+    top: 47%;
+  }
+}
+
+.countdown__ball.right {
+  right: -5px;
+  top: 47%;
+}
+
+.countdown__text {
+  font-size: 1.875rem;
+  color: #fb6087;
+}
+
+@media (min-width: 65em) {
+  .countdown__text {
+    font-size: 3.5rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
