@@ -141,6 +141,8 @@ i:hover {
 }
 
 .countdown__wrapper {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0px auto;
 }
 
